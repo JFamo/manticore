@@ -28,11 +28,17 @@ main{
 	right:1rem;
 }
 
+.top-left{
+	position:absolute;
+	top:1rem;
+	left:1rem;
+}
+
 .two-col{
 	column-count:2;
 }
 
-.btn{
+.mybtn{
 	background-color:#080808;
 	color: #33FF33; font-family: 'Share Tech Mono', monospace;
 	font-size:16px;
@@ -42,10 +48,11 @@ main{
 	border: 2px solid #33FF33;
 }
 
-.btn:hover{
+.mybtn:hover{
 	background-color:#33FF33;
 	color: #080808; 
 	border: 2px solid #080808;
+	text-decoration: none;
 }
 
 .fa-lock{
@@ -54,6 +61,14 @@ main{
 
 .keyp{
 	min-height:5rem;
+}
+
+#action-display{
+	width:60%;
+	height:60%;
+	border:2px solid #33FF33;
+	padding:1rem;
+	margin-bottom:2rem;
 }
 
 .blink {
