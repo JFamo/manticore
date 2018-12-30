@@ -16,6 +16,16 @@ function generateKeys(){
 	}
 }
 
+function loadKey(key){
+	document.getElementById(key).style.display = "block";
+	if(key == "key-two"){
+		document.getElementById("mask-two").style.display = "none";
+	}
+	if(key == "key-three"){
+		document.getElementById("mask-three").style.display = "none";
+	}
+}
+
 function randomColor(){
 	var colors = ['red', 'green', 'blue', 'yellow'];
 	return colors[Math.floor(Math.random() * colors.length)];

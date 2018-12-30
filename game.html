@@ -16,21 +16,24 @@
 				</div>
 				<div class="col-6">
 					<center><h1>Keys</h1></center>
-					<p id="key-one">1. 
+					<p class="keyp" id="key-one">1. 
 						<svg id="key-one-one" height="50" width="50"></svg>
 						<svg id="key-one-two" width="50" height="50"></svg>
 						<svg id="key-one-three" height="50" width="50"></svg>
-					<i style="float:right; font-size:50px;" class="fa fa-lock"></i>
+					<i style="float:right; font-size:50px;" onclick="loadKey('key-two');" class="fa fa-lock"></i>
 					</p>
-					<p id="key-two">2. 
+					<p class="keyp" id="key-two" style="display:none;">2. 
 						<svg id="key-two-one" height="50" width="50"></svg>
 						<svg id="key-two-two" width="50" height="50"></svg>
 						<svg id="key-two-three" height="50" width="50"></svg>
 						<svg id="key-two-four" height="50" width="50"></svg>
 						<svg id="key-two-five" height="50" width="50"></svg>
-					<i style="float:right; font-size:50px;" class="fa fa-lock"></i>
+					<i style="float:right; font-size:50px;" onclick="loadKey('key-three');" class="fa fa-lock"></i>
 					</p>
-					<p id="key-three">3. 
+					<p class="keyp" id="mask-two">2.
+						<span class="blink">&#9608;</span><marquee style="display:inline-block;" id="mask-two-marquee" behavior="scroll" direction="left"><p>Unhashing://80f69c9cb3b8cf841bbe2d0c5de0eb88a2058db37d08522c8a07f03c5e15a1a6...	...		...		...		...		ERROR:/@56.66.238.29:8080/ACCESS_DENIED</marquee>
+					</p>
+					<p class="keyp" id="key-three" style="display:none;">3. 
 						<svg id="key-three-one" height="50" width="50"></svg>
 						<svg id="key-three-two" width="50" height="50"></svg>
 						<svg id="key-three-three" height="50" width="50"></svg>
@@ -39,6 +42,9 @@
 						<svg id="key-three-six" height="50" width="50"></svg>
 						<svg id="key-three-seven" height="50" width="50"></svg>
 					<i style="float:right; font-size:50px;" class="fa fa-lock"></i>
+					</p>
+					<p class="keyp" id="mask-three">3.
+						<span class="blink">&#9608;</span><marquee style="display:inline-block;" id="mask-two-marquee" behavior="scroll" direction="left"><p>Unhashing://49133750f62dc7f963b582bb77e25d7a07b434b6d334c62e9b0a37559d8334d5...	...		...		...		...		ERROR:/@56.66.238.29:8080/ACCESS_DENIED</marquee>
 					</p>
 				</div>
 			</div>
