@@ -18,6 +18,12 @@ h1{
   transform: translate(-50%, -50%);
 }
 
+.bottom-right{
+	position:absolute;
+	bottom:1rem;
+	right:1rem;
+}
+
 .btn{
 	background-color:#080808;
 	color: #33FF33; font-family: 'Share Tech Mono', monospace;
