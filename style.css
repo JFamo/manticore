@@ -1,12 +1,16 @@
 body{
-	background-color:#080808;
-	color: #33FF33; font-family: 'Share Tech Mono', monospace;
-	font-size:16px;
-	line-height:1.4;
+	background-color:#080808 !important;
+	color: #33FF33 !important; font-family: 'Share Tech Mono', monospace !important;
+	font-size:16px !important;
+	line-height:1.4 !important;
 }
 
 h1{
 	letter-spacing: 3;
+}
+
+main{
+	padding:1rem;
 }
 
 .center{
@@ -24,6 +28,10 @@ h1{
 	right:1rem;
 }
 
+.two-col{
+	column-count:2;
+}
+
 .btn{
 	background-color:#080808;
 	color: #33FF33; font-family: 'Share Tech Mono', monospace;
@@ -38,6 +46,10 @@ h1{
 	background-color:#33FF33;
 	color: #080808; 
 	border: 2px solid #080808;
+}
+
+.fa-lock{
+	cursor:pointer;
 }
 
 .blink {
