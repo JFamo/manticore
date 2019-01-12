@@ -52,3 +52,52 @@ function interpretColor(color){
 	}
 	return rgb;
 }
+
+function attack(){
+	var actionpotentials = ['zombie','zombie','zombie','zombie','zombie','zombie','zombie','zombie','firewall','firewall','firewall','firewall','firewall','firewall','firewall','trojan','trojan','trojan','trojan','trojan','bot','bot','bot','bot','bot','bot','data','data','data','override'];
+	var thisaction = actionpotentials[Math.floor(Math.random() * actionpotentials.length)];
+	var actiondisplay = document.getElementById('action-display');
+	var actiontitle = document.getElementById('action-title');
+	var actionimage = document.getElementById('action-image');
+	var actiondescription = document.getElementById('action-description');
+
+	if(thisaction == 'zombie'){
+		actiontitle.innerHTML = "Zombie Computer";
+		actionimage.src = "images/render_computer.png";
+		actiondescription.innerHTML = "Place a zombie computer on any unoccupied data node connected to one you currently occupy."
+	}
+	else if(thisaction == 'firewall'){
+		actiontitle.innerHTML = "Firewall";
+		actionimage.src = "images/render_firewall.png";
+		actiondescription.innerHTML = "Place a firewall on any connection on the board."
+	}
+	else if(thisaction == 'trojan'){
+		actiontitle.innerHTML = "Trojan";
+		actionimage.src = "images/render_trojan.png";
+		actiondescription.innerHTML = "Place a trojan on any unoccupied node connected to one you currently occupy."
+	}
+	else if(thisaction == 'bot'){
+		actiontitle.innerHTML = "Bot";
+		actionimage.src = "images/render_bot.png";
+		actiondescription.innerHTML = "Place a bot on any unoccupied node connected to one you currently occupy."
+	}
+	else if(thisaction == 'data'){
+		thisShape = randomShape();
+		thisColor = randomColor();
+		actiontitle.innerHTML = "Data Value";
+		actionimage.src = "images/render_trojan.png";
+		actiondescription.innerHTML = "Collect one " + thisColor + " " + thisShape + " data card.";
+	}
+	else if(thisaction == 'data'){
+		thisShape = randomShape();
+		thisColor = randomColor();
+		actiontitle.innerHTML = "Data Value";
+		actionimage.src = "images/render_trojan.png";
+		actiondescription.innerHTML = "Collect one " + thisColor + " " + thisShape + " data card.";
+	}
+	else{
+		actiontitle.innerHTML = "Error";
+		actionimage.src = "images/render_bot.png";
+		actiondescription.innerHTML = "You encountered an error! Do nothing.";
+	}
+}

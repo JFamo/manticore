@@ -78,3 +78,8 @@ main{
 @keyframes blinker {  
   50% { opacity: 0; }
 }
+
+.actionimage{
+	border:2px solid #33FF33;
+	margin-bottom:8px;
+}
