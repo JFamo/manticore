@@ -54,13 +54,26 @@ function interpretColor(color){
 }
 
 function attack(){
+	//Choose action, declare vars for HTML elements
 	var actionpotentials = ['zombie','zombie','zombie','zombie','zombie','zombie','zombie','zombie','firewall','firewall','firewall','firewall','firewall','firewall','firewall','trojan','trojan','trojan','trojan','trojan','bot','bot','bot','bot','bot','bot','data','data','data','override'];
 	var thisaction = actionpotentials[Math.floor(Math.random() * actionpotentials.length)];
-	var actiondisplay = document.getElementById('action-display');
 	var actiontitle = document.getElementById('action-title');
 	var actionimage = document.getElementById('action-image');
 	var actiondescription = document.getElementById('action-description');
+	var actioninitial = document.getElementById('action-initial');
 
+	//Deactivate initial text
+	if(actioninitial.style.display != "none"){
+		actioninitial.style.display = "none";
+	}
+
+	//Activate loader
+	document.getElementById('loader').style.display = "block";
+	actiontitle.style.display = "none";
+	actionimage.style.display = "none";
+	actiondescription.style.display = "none";
+
+	//Update action display content
 	if(thisaction == 'zombie'){
 		actiontitle.innerHTML = "Zombie Computer";
 		actionimage.src = "images/render_computer.png";
@@ -100,4 +113,15 @@ function attack(){
 		actionimage.src = "images/render_bot.png";
 		actiondescription.innerHTML = "You encountered an error! Do nothing.";
 	}
+	setTimeout(showAction, 1000)
+}
+
+function showAction(){
+	document.getElementById('loader').style.display = "none";
+	var actiontitle = document.getElementById('action-title');
+	var actionimage = document.getElementById('action-image');
+	var actiondescription = document.getElementById('action-description');
+	actiontitle.style.display = "block";
+	actionimage.style.display = "block";
+	actiondescription.style.display = "block";
 }

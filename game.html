@@ -18,10 +18,11 @@
 					<center>
 						<h1>Console</h1>
 						<div id="action-display">
-						<!-- default USE THE /EXECUTE ATTACK/ BUTTON WHEN LANDING ON AN ATTACK NODE -->
-						<h2 id="action-title">Zombie Computer</h2>
-						<img id="action-image" class="actionimage" src="images/render_trojan.png" width="100%">
-						<p id="action-description">Place a zombie computer on any unoccupied data node connected to one you currently occupy.
+						<p id="action-initial">USE THE /EXECUTE ATTACK/ BUTTON WHEN LANDING ON AN ATTACK NODE</p>
+						<div id="loader" class="animate-bottom" style="margin-top:30%; display:none;"></div>
+						<h2 id="action-title" class="animate-bottom" style="display:none;">Zombie Computer</h2>
+						<img id="action-image" class="actionimage animate-bottom" src="images/render_trojan.png" width="100%" style="display:none;">
+						<p id="action-description" class="animate-bottom" style="display:none;">Place a zombie computer on any unoccupied data node connected to one you currently occupy.
 						</div>
 						<a href="#" class="mybtn" onclick="attack();">Execute Attack <i class="fa fa-bolt"></i></a>
 					</center>
