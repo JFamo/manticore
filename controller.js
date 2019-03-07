@@ -4,10 +4,7 @@ function generateKeys(){
 	for(var i = 0; i < ids.length; i ++){
 		thisShape = randomShape();
 		thisColor = interpretColor(randomColor());
-		if(thisShape == "circle"){
-			document.getElementById(ids[i]).innerHTML = '<circle cx="25" cy="25" r="22" style="fill:rgb(' + thisColor.red + ',' + thisColor.green + ',' + thisColor.blue + ');stroke-width:3;stroke:rgb(255,255,255)" />';
-		}
-		else if(thisShape == "square"){
+		if(thisShape == "square"){
 			document.getElementById(ids[i]).innerHTML = '<rect width="50" height="50" style="fill:rgb(' + thisColor.red + ',' + thisColor.green + ',' + thisColor.blue + ');stroke-width:3;stroke:rgb(255,255,255)" />';
 		}
 		else{
