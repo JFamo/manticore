@@ -32,7 +32,7 @@ function randomColor(){
 }
 
 function randomShape(){
-	var shapes = ['triangle', 'square', 'circle'];
+	var shapes = ['triangle', 'square'];
 	return shapes[Math.floor(Math.random() * shapes.length)];
 }
 
