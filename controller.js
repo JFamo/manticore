@@ -1,5 +1,5 @@
 function generateKeys(){
-	var ids = ["key-one-one","key-one-two","key-one-three","key-two-one","key-two-two","key-two-three","key-two-four","key-two-five","key-three-one","key-three-two","key-three-three","key-three-four","key-three-five","key-three-six","key-three-seven"];
+	var ids = ["key-one-one","key-one-two","key-two-one","key-two-two","key-two-three","key-three-one","key-three-two","key-three-three","key-three-four","key-three-five"];
 	var thisShape, thisColor;
 	for(var i = 0; i < ids.length; i ++){
 		thisShape = randomShape();
@@ -55,7 +55,7 @@ function interpretColor(color){
 
 function attack(){
 	//Choose action, declare vars for HTML elements
-	var actionpotentials = ['zombie','zombie','zombie','zombie','zombie','zombie','zombie','zombie','firewall','firewall','firewall','firewall','firewall','firewall','firewall','trojan','trojan','trojan','trojan','trojan','bot','bot','bot','bot','bot','bot','data','data','data','override'];
+	var actionpotentials = ['zombie','zombie','zombie','zombie','zombie','zombie','zombie','zombie','firewall','firewall','firewall','firewall','firewall','firewall','firewall','trojan','trojan','trojan','trojan','firewall','firewall','bot','bot','bot','bot','bot'];
 	var thisaction = actionpotentials[Math.floor(Math.random() * actionpotentials.length)];
 	var actiontitle = document.getElementById('action-title');
 	var actionimage = document.getElementById('action-image');
