@@ -52,7 +52,7 @@ function interpretColor(color){
 
 function attack(){
 	//Choose action, declare vars for HTML elements
-	var actionpotentials = ['zombie','zombie','zombie','zombie','zombie','zombie','zombie','zombie','firewall','firewall','firewall','firewall','firewall','firewall','firewall','trojan','trojan','trojan','trojan','firewall','firewall','bot','bot','bot','bot','bot'];
+	var actionpotentials = ['zombie','bot','trojan','firewall','zombie','bot','trojan','firewall','zombie','bot','trojan','firewall','zombie','bot','zombie','firewall'];
 	var thisaction = actionpotentials[Math.floor(Math.random() * actionpotentials.length)];
 	var actiontitle = document.getElementById('action-title');
 	var actionimage = document.getElementById('action-image');
